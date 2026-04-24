@@ -49,3 +49,6 @@ Soy un ingeniero de software y redes orientado a resultados, con experiencia en 
 ---
 
 ![Visitor Badge](https://komarev.com/ghpvc/?username=jhampier2&color=blueviolet)
+![Followers](https://img.shields.io/github/followers/jhampier2?label=Followers&style=social)
+![Stars](https://img.shields.io/github/stars/jhampier2?label=Stars&style=social)
+![Last Commit](https://img.shields.io/github/last-commit/jhampier2/jhampier2?label=Last%20update&style=flat)

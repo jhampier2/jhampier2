@@ -1,0 +1,328 @@
+cat > /home/claude/banner.svg << 'SVGEOF'
+<svg width="1000" height="320" viewBox="0 0 1000 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1000" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060912"/>
+      <stop offset="55%" stop-color="#0B0F1E"/>
+      <stop offset="100%" stop-color="#0F1328"/>
+    </linearGradient>
+
+    <!-- Glows -->
+    <radialGradient id="glowCyan" cx="18%" cy="45%" r="38%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet" cx="78%" cy="60%" r="42%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowTop" cx="60%" cy="10%" r="30%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Name gradient -->
+    <linearGradient id="nameGrad" x1="55" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#38BDF8"/>
+      <stop offset="42%"  stop-color="#F0F6FF"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <!-- Accent bar -->
+    <linearGradient id="accentBar" x1="0" y1="45" x2="0" y2="255" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#38BDF8"/>
+      <stop offset="50%"  stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <!-- Terminal border -->
+    <linearGradient id="termBorder" x1="605" y1="35" x2="975" y2="295" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Separator line -->
+    <linearGradient id="sepLine" x1="55" y1="0" x2="590" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="60%"  stop-color="#818CF8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Dot grid -->
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.9" fill="#FFFFFF" fill-opacity="0.055"/>
+    </pattern>
+
+    <!-- Subtle sheen for badges -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow filter for name -->
+    <filter id="nGlow" x="-5%" y="-20%" width="110%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- ── BACKGROUND ─────────────────────────────────── -->
+  <rect width="1000" height="320" fill="url(#bgGrad)"/>
+  <rect width="1000" height="320" fill="url(#dots)"/>
+  <rect width="1000" height="320" fill="url(#glowCyan)"/>
+  <rect width="1000" height="320" fill="url(#glowViolet)"/>
+  <rect width="1000" height="320" fill="url(#glowTop)"/>
+
+  <!-- Outer border glow -->
+  <rect x="0.5" y="0.5" width="999" height="319" rx="2"
+        stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.12" fill="none"/>
+
+  <!-- ── LEFT ACCENT BAR ────────────────────────────── -->
+  <rect x="40" y="45" width="3" height="210" rx="1.5" fill="url(#accentBar)"/>
+
+  <!-- ── HEADER LABEL ───────────────────────────────── -->
+  <text x="55" y="68"
+        font-family="'Courier New', Courier, monospace"
+        font-size="10.5" fill="#38BDF8" fill-opacity="0.65"
+        letter-spacing="3.5">// SOFTWARE ENGINEER · NETWORK SPECIALIST</text>
+
+  <!-- ── NAME ──────────────────────────────────────── -->
+  <text x="55" y="117"
+        font-family="'Segoe UI Black', 'Arial Black', 'Helvetica Neue', sans-serif"
+        font-size="37" font-weight="900"
+        fill="url(#nameGrad)" filter="url(#nGlow)"
+        letter-spacing="0.8">JHAMPIER JHORDCH</text>
+
+  <text x="55" y="158"
+        font-family="'Segoe UI Black', 'Arial Black', 'Helvetica Neue', sans-serif"
+        font-size="37" font-weight="900"
+        fill="url(#nameGrad)" filter="url(#nGlow)"
+        letter-spacing="0.8">ORTIZ VENTO</text>
+
+  <!-- Separator line under name -->
+  <line x1="55" y1="168" x2="590" y2="168"
+        stroke="url(#sepLine)" stroke-width="1"/>
+
+  <!-- ── SUBTITLE ───────────────────────────────────── -->
+  <text x="55" y="188"
+        font-family="'Courier New', Courier, monospace"
+        font-size="13" fill="#94A3B8" letter-spacing="0.8">
+    Full Stack Dev  ·  Open Source  ·  Systems &amp; Networks
+  </text>
+
+  <!-- ── SOCIAL LINKS ──────────────────────────────── -->
+  <!-- GitHub icon path (simplified) -->
+  <text x="55" y="208"
+        font-family="'Courier New', Courier, monospace"
+        font-size="11.5" fill="#38BDF8" fill-opacity="0.7">⌦ github.com/jhampier2</text>
+  <text x="240" y="208"
+        font-family="'Courier New', Courier, monospace"
+        font-size="11.5" fill="#A78BFA" fill-opacity="0.7">⌦ linkedin.com/in/jhampier</text>
+
+  <!-- ── LANGUAGE BADGES ────────────────────────────── -->
+
+  <!-- ROW 1 — C  C#  C+  C++  Python  Java -->
+
+  <!-- C -->
+  <rect x="55" y="224" width="72" height="26" rx="5"
+        fill="#A8B9CC14" stroke="#A8B9CC" stroke-width="0.9"/>
+  <rect x="55" y="224" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="91" y="241"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#A8B9CC"
+        text-anchor="middle">C</text>
+
+  <!-- C# -->
+  <rect x="135" y="224" width="72" height="26" rx="5"
+        fill="#9B4F9614" stroke="#B370CF" stroke-width="0.9"/>
+  <rect x="135" y="224" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="171" y="241"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#CE93D8"
+        text-anchor="middle">C#</text>
+
+  <!-- C+ -->
+  <rect x="215" y="224" width="72" height="26" rx="5"
+        fill="#A8B9CC0E" stroke="#A8B9CC" stroke-width="0.9" stroke-dasharray="3 2"/>
+  <rect x="215" y="224" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="251" y="241"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#A8B9CC"
+        text-anchor="middle">C+</text>
+
+  <!-- C++ -->
+  <rect x="295" y="224" width="72" height="26" rx="5"
+        fill="#00599C14" stroke="#5B9BD5" stroke-width="0.9"/>
+  <rect x="295" y="224" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="331" y="241"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#5B9BD5"
+        text-anchor="middle">C++</text>
+
+  <!-- Python -->
+  <rect x="375" y="224" width="72" height="26" rx="5"
+        fill="#3776AB14" stroke="#4B8BBE" stroke-width="0.9"/>
+  <rect x="375" y="224" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="411" y="241"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#4B8BBE"
+        text-anchor="middle">Python</text>
+
+  <!-- Java -->
+  <rect x="455" y="224" width="72" height="26" rx="5"
+        fill="#ED8B0014" stroke="#ED8B00" stroke-width="0.9"/>
+  <rect x="455" y="224" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="491" y="241"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#F6A623"
+        text-anchor="middle">Java</text>
+
+  <!-- ROW 2 — Node.js  PHP  HTML  CSS  React -->
+
+  <!-- Node.js -->
+  <rect x="55" y="258" width="80" height="26" rx="5"
+        fill="#33993314" stroke="#68A063" stroke-width="0.9"/>
+  <rect x="55" y="258" width="80" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="95" y="275"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#68A063"
+        text-anchor="middle">Node.js</text>
+
+  <!-- PHP -->
+  <rect x="143" y="258" width="72" height="26" rx="5"
+        fill="#777BB414" stroke="#9FA8DA" stroke-width="0.9"/>
+  <rect x="143" y="258" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="179" y="275"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#9FA8DA"
+        text-anchor="middle">PHP</text>
+
+  <!-- HTML -->
+  <rect x="223" y="258" width="72" height="26" rx="5"
+        fill="#E34F2614" stroke="#F06529" stroke-width="0.9"/>
+  <rect x="223" y="258" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="259" y="275"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#F06529"
+        text-anchor="middle">HTML</text>
+
+  <!-- CSS -->
+  <rect x="303" y="258" width="72" height="26" rx="5"
+        fill="#1572B614" stroke="#2DA0F0" stroke-width="0.9"/>
+  <rect x="303" y="258" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="339" y="275"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#2DA0F0"
+        text-anchor="middle">CSS</text>
+
+  <!-- React -->
+  <rect x="383" y="258" width="72" height="26" rx="5"
+        fill="#61DAFB14" stroke="#61DAFB" stroke-width="0.9"/>
+  <rect x="383" y="258" width="72" height="13" rx="5" fill="url(#sheen)"/>
+  <text x="419" y="275"
+        font-family="'Segoe UI', Arial, sans-serif"
+        font-size="11.5" font-weight="700" fill="#61DAFB"
+        text-anchor="middle">React</text>
+
+  <!-- ── TERMINAL PANEL (RIGHT) ──────────────────────── -->
+
+  <!-- Terminal shadow/glow -->
+  <rect x="605" y="38" width="375" height="252" rx="10"
+        fill="#38BDF8" fill-opacity="0.04"/>
+
+  <!-- Terminal box -->
+  <rect x="606" y="36" width="374" height="252" rx="10"
+        fill="#080C18" stroke="url(#termBorder)" stroke-width="1"/>
+
+  <!-- Title bar -->
+  <rect x="606" y="36" width="374" height="34" rx="10" fill="#0D1526"/>
+  <rect x="606" y="56"  width="374" height="14" fill="#0D1526"/>
+
+  <!-- Traffic lights -->
+  <circle cx="628" cy="53" r="5" fill="#FF5F56" fill-opacity="0.85"/>
+  <circle cx="647" cy="53" r="5" fill="#FFBD2E" fill-opacity="0.85"/>
+  <circle cx="666" cy="53" r="5" fill="#27C93F" fill-opacity="0.85"/>
+
+  <!-- Title bar text -->
+  <text x="793" y="58"
+        font-family="'Courier New', monospace"
+        font-size="11" fill="#4A5568" text-anchor="middle">~/portfolio/README.md</text>
+
+  <!-- ── Terminal lines ── -->
+
+  <text x="626" y="88"  font-family="'Courier New', monospace" font-size="11" fill="#4A5568">$</text>
+  <text x="638" y="88"  font-family="'Courier New', monospace" font-size="11" fill="#68D391">whoami</text>
+
+  <text x="626" y="105" font-family="'Courier New', monospace" font-size="11" fill="#38BDF8">→</text>
+  <text x="640" y="105" font-family="'Courier New', monospace" font-size="11" fill="#E2E8F0">Jhampier J. Ortiz Vento</text>
+
+  <text x="626" y="123" font-family="'Courier New', monospace" font-size="11" fill="#4A5568">$</text>
+  <text x="638" y="123" font-family="'Courier New', monospace" font-size="11" fill="#68D391">cat role.txt</text>
+
+  <text x="626" y="140" font-family="'Courier New', monospace" font-size="11" fill="#38BDF8">→</text>
+  <text x="640" y="140" font-family="'Courier New', monospace" font-size="11" fill="#E2E8F0">Software Eng. &amp; Net. Specialist</text>
+
+  <text x="626" y="158" font-family="'Courier New', monospace" font-size="11" fill="#4A5568">$</text>
+  <text x="638" y="158" font-family="'Courier New', monospace" font-size="11" fill="#68D391">git log --oneline -3</text>
+
+  <text x="626" y="176" font-family="'Courier New', monospace" font-size="10" fill="#F6AD55">a3f2c1d</text>
+  <text x="678" y="176" font-family="'Courier New', monospace" font-size="10" fill="#94A3B8">feat: new project deployed</text>
+
+  <text x="626" y="192" font-family="'Courier New', monospace" font-size="10" fill="#F6AD55">8b1e4a2</text>
+  <text x="678" y="192" font-family="'Courier New', monospace" font-size="10" fill="#94A3B8">fix: network security patch</text>
+
+  <text x="626" y="208" font-family="'Courier New', monospace" font-size="10" fill="#F6AD55">5c9d7f0</text>
+  <text x="678" y="208" font-family="'Courier New', monospace" font-size="10" fill="#94A3B8">chore: refactor core modules</text>
+
+  <text x="626" y="226" font-family="'Courier New', monospace" font-size="11" fill="#4A5568">$</text>
+  <text x="638" y="226" font-family="'Courier New', monospace" font-size="11" fill="#68D391">npm run build</text>
+
+  <text x="626" y="244" font-family="'Courier New', monospace" font-size="11" fill="#38BDF8">→</text>
+  <text x="640" y="244" font-family="'Courier New', monospace" font-size="11" fill="#27C93F">✓ Build successful (0 errors)</text>
+
+  <!-- Blinking cursor line -->
+  <text x="626" y="264" font-family="'Courier New', monospace" font-size="11" fill="#4A5568">$</text>
+  <rect x="638" y="253" width="7" height="13" rx="1"
+        fill="#38BDF8" fill-opacity="0.75"/>
+
+  <!-- ── DECORATIVE ELEMENTS ─────────────────────────── -->
+
+  <!-- Top-right floating circles -->
+  <circle cx="948" cy="22" r="18"
+          stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.18" fill="none"/>
+  <circle cx="948" cy="22" r="10"
+          stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.12" fill="none"/>
+  <circle cx="948" cy="22" r="2.5"
+          fill="#38BDF8" fill-opacity="0.45"/>
+
+  <!-- Bottom-left mini circles -->
+  <circle cx="555" cy="298" r="12"
+          stroke="#A78BFA" stroke-width="0.8" stroke-opacity="0.2" fill="none"/>
+  <circle cx="555" cy="298" r="5"
+          fill="#A78BFA" fill-opacity="0.15"/>
+
+  <!-- Circuit trace lines -->
+  <polyline points="606,295 530,295 530,310"
+            stroke="#38BDF8" stroke-width="0.6"
+            stroke-opacity="0.25" fill="none"/>
+  <circle cx="530" cy="295" r="2.5"
+          fill="#38BDF8" fill-opacity="0.4"/>
+
+  <polyline points="800,288 860,288 860,310"
+            stroke="#A78BFA" stroke-width="0.6"
+            stroke-opacity="0.25" fill="none"/>
+  <circle cx="860" cy="288" r="2.5"
+          fill="#A78BFA" fill-opacity="0.4"/>
+
+  <!-- Small decorative dots scatter (top area) -->
+  <circle cx="570" cy="55"  r="1.5" fill="#38BDF8" fill-opacity="0.25"/>
+  <circle cx="585" cy="80"  r="1"   fill="#A78BFA" fill-opacity="0.2"/>
+  <circle cx="560" cy="100" r="1"   fill="#38BDF8" fill-opacity="0.15"/>
+  <circle cx="595" cy="130" r="1.5" fill="#818CF8" fill-opacity="0.2"/>
+
+</svg>
+SVGEOF
+echo "Done"

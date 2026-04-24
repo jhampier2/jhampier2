@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/jhampier2/jhampier2/main/banner.svg)
+![Banner](banner.svg)
 
 # ¡Hola! Soy Jhampier 👋
 

@@ -37,7 +37,6 @@ Soy un ingeniero de software y redes orientado a resultados, con experiencia en 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhampier2&layout=compact&theme=radical)
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=jhampier2&theme=radical&row=1&column=4)
 
 </div>
 

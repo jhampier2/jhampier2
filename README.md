@@ -27,15 +27,15 @@ Soy un ingeniero de software y redes orientado a resultados, con experiencia en 
 
 ---
 
-##  Estadísticas
+## 📊 Estadísticas
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jhampier2&show_icons=true&theme=onedark&hide_border=false&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jhampier2&show_icons=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&icon_color=3FB950&border_color=30363D&count_private=true)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jhampier2&theme=onedark)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jhampier2&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E&border=30363D)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhampier2&layout=compact&theme=onedark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhampier2&layout=compact&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&border_color=30363D)
 
 </div>
 
@@ -43,7 +43,7 @@ Soy un ingeniero de software y redes orientado a resultados, con experiencia en 
 
 ##  Actividad reciente
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jhampier2&theme=onedark&area=true)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jhampier2&bg_color=0D1117&color=58A6FF&line=3FB950&point=58A6FF&area=true&hide_border=true)
 
 ---
 

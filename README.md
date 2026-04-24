@@ -31,12 +31,11 @@ Soy un ingeniero de software y redes orientado a resultados, con experiencia en 
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jhampier2&show_icons=true&theme=radical&hide_border=false&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jhampier2&show_icons=true&theme=onedark&hide_border=false&count_private=true)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jhampier2&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=jhampier2&theme=onedark)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhampier2&layout=compact&theme=radical)
-
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhampier2&layout=compact&theme=onedark)
 
 </div>
 
@@ -44,7 +43,7 @@ Soy un ingeniero de software y redes orientado a resultados, con experiencia en 
 
 ##  Actividad reciente
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jhampier2&theme=react-dark&area=true)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=jhampier2&theme=onedark&area=true)
 
 ---
 
